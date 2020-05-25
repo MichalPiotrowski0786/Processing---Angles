@@ -12,7 +12,7 @@ void setup(){
 frameRate(144);
 for(int i = 1; i < cols; i++){
    for(int j = 1; j < rows; j++){ 
-    random[i+j*W] = random(-0.2,0.2);
+    random[i+j*W] = random(-0.3,0.3);
    }
 }
 }
@@ -35,7 +35,7 @@ for(int i = 1; i < cols; i++){
       translate(i*SCALE,j*SCALE);
       rotate(v.heading()+PI/4+rr);
       beginShape(TRIANGLES);
-      fill(255-col,0,0);
+      fill(col);
       vertex(0, 2);
       vertex(-(SCALE)+dx, 0);
       vertex(0, -2);
